@@ -14,7 +14,18 @@
 		83D4A20D266E102100C83D2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83D4A20C266E102100C83D2E /* Assets.xcassets */; };
 		83D4A210266E102100C83D2E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83D4A20E266E102100C83D2E /* LaunchScreen.storyboard */; };
 		83D4A218266E10A000C83D2E /* audiofile.wav in Resources */ = {isa = PBXBuildFile; fileRef = 83D4A217266E10A000C83D2E /* audiofile.wav */; };
+		83D4A220266E188400C83D2E /* CIAudioProblemReproUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D4A21F266E188400C83D2E /* CIAudioProblemReproUITests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		83D4A222266E188400C83D2E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83D4A1F8266E101E00C83D2E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 83D4A1FF266E101E00C83D2E;
+			remoteInfo = CIAudioProblemRepro;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		83D4A200266E101E00C83D2E /* CIAudioProblemRepro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CIAudioProblemRepro.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,10 +37,20 @@
 		83D4A20F266E102100C83D2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		83D4A211266E102100C83D2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		83D4A217266E10A000C83D2E /* audiofile.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = audiofile.wav; path = CIAudioProblemRepro/audiofile.wav; sourceTree = "<group>"; };
+		83D4A21D266E188400C83D2E /* CIAudioProblemReproUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CIAudioProblemReproUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		83D4A21F266E188400C83D2E /* CIAudioProblemReproUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CIAudioProblemReproUITests.swift; sourceTree = "<group>"; };
+		83D4A221266E188400C83D2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		83D4A1FD266E101E00C83D2E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83D4A21A266E188400C83D2E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -44,6 +65,7 @@
 			children = (
 				83D4A217266E10A000C83D2E /* audiofile.wav */,
 				83D4A202266E101E00C83D2E /* CIAudioProblemRepro */,
+				83D4A21E266E188400C83D2E /* CIAudioProblemReproUITests */,
 				83D4A201266E101E00C83D2E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				83D4A200266E101E00C83D2E /* CIAudioProblemRepro.app */,
+				83D4A21D266E188400C83D2E /* CIAudioProblemReproUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -68,6 +91,15 @@
 				83D4A211266E102100C83D2E /* Info.plist */,
 			);
 			path = CIAudioProblemRepro;
+			sourceTree = "<group>";
+		};
+		83D4A21E266E188400C83D2E /* CIAudioProblemReproUITests */ = {
+			isa = PBXGroup;
+			children = (
+				83D4A21F266E188400C83D2E /* CIAudioProblemReproUITests.swift */,
+				83D4A221266E188400C83D2E /* Info.plist */,
+			);
+			path = CIAudioProblemReproUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -90,6 +122,24 @@
 			productReference = 83D4A200266E101E00C83D2E /* CIAudioProblemRepro.app */;
 			productType = "com.apple.product-type.application";
 		};
+		83D4A21C266E188400C83D2E /* CIAudioProblemReproUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83D4A224266E188400C83D2E /* Build configuration list for PBXNativeTarget "CIAudioProblemReproUITests" */;
+			buildPhases = (
+				83D4A219266E188400C83D2E /* Sources */,
+				83D4A21A266E188400C83D2E /* Frameworks */,
+				83D4A21B266E188400C83D2E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				83D4A223266E188400C83D2E /* PBXTargetDependency */,
+			);
+			name = CIAudioProblemReproUITests;
+			productName = CIAudioProblemReproUITests;
+			productReference = 83D4A21D266E188400C83D2E /* CIAudioProblemReproUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -101,6 +151,10 @@
 				TargetAttributes = {
 					83D4A1FF266E101E00C83D2E = {
 						CreatedOnToolsVersion = 12.5;
+					};
+					83D4A21C266E188400C83D2E = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 83D4A1FF266E101E00C83D2E;
 					};
 				};
 			};
@@ -118,6 +172,7 @@
 			projectRoot = "";
 			targets = (
 				83D4A1FF266E101E00C83D2E /* CIAudioProblemRepro */,
+				83D4A21C266E188400C83D2E /* CIAudioProblemReproUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -134,6 +189,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		83D4A21B266E188400C83D2E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -147,7 +209,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		83D4A219266E188400C83D2E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83D4A220266E188400C83D2E /* CIAudioProblemReproUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		83D4A223266E188400C83D2E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 83D4A1FF266E101E00C83D2E /* CIAudioProblemRepro */;
+			targetProxy = 83D4A222266E188400C83D2E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		83D4A209266E101E00C83D2E /* Main.storyboard */ = {
@@ -323,6 +401,44 @@
 			};
 			name = Release;
 		};
+		83D4A225266E188400C83D2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 87HV84W4Z5;
+				INFOPLIST_FILE = CIAudioProblemReproUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ariel.CIAudioProblemReproUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CIAudioProblemRepro;
+			};
+			name = Debug;
+		};
+		83D4A226266E188400C83D2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 87HV84W4Z5;
+				INFOPLIST_FILE = CIAudioProblemReproUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ariel.CIAudioProblemReproUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CIAudioProblemRepro;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -340,6 +456,15 @@
 			buildConfigurations = (
 				83D4A215266E102100C83D2E /* Debug */,
 				83D4A216266E102100C83D2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83D4A224266E188400C83D2E /* Build configuration list for PBXNativeTarget "CIAudioProblemReproUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83D4A225266E188400C83D2E /* Debug */,
+				83D4A226266E188400C83D2E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
