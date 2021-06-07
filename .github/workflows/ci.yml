@@ -11,11 +11,11 @@ jobs:
     runs-on: macOS-11.0
     steps:
       - uses: actions/checkout@v2
-      - name: Run integration tests`
+      - name: Run integration tests
         run: |
           brew install blackhole-2ch
           brew install switchaudio-osx
-          SwitchAudioSource -s "BlackHole 16ch" -t input
-          SwitchAudioSource -s "BlackHole 16ch" -t output
+          SwitchAudioSource -s "BlackHole 2ch" -t input
+          SwitchAudioSource -s "BlackHole 2ch" -t output
           sudo xcode-select --switch /Applications/Xcode_12.5.app
           xcodebuild test -scheme CIAudioProblemRepro -destination "platform=iOS Simulator,name=iPhone 12 mini"
