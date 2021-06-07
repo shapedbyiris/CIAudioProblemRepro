@@ -16,4 +16,3 @@ jobs:
           xcodebuild test \
           -scheme CIAudioProblemRepro \
           -destination "platform=iOS Simulator,name=iPhone 12 mini"
-          xcpretty
