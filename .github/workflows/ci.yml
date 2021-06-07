@@ -13,6 +13,5 @@ jobs:
       - uses: actions/checkout@v2
       - name: Run integration tests`
         run: |
-          xcodebuild test \
-          -scheme CIAudioProblemRepro \
-          -destination "platform=iOS Simulator,name=iPhone 12 mini"
+          sudo xcode-select --switch /Applications/Xcode_12.5.app
+          xcodebuild test -scheme CIAudioProblemRepro -destination "platform=iOS Simulator,name=iPhone 12 mini"
