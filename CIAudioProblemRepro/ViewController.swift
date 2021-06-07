@@ -31,13 +31,9 @@ class ViewController: UIViewController {
         engine.connect(player, to: effectNode, format: file.processingFormat)
         engine.connect(effectNode, to: engine.mainMixerNode, format: file.processingFormat)
 
-//        player.scheduleBuffer(buffer, at: nil, options: .loops, completionHandler: nil)
+        player.scheduleBuffer(buffer, at: nil, options: .loops, completionHandler: nil)
 
         try! engine.start()
-        //        player.play()
-        //
-        //        playbackUpdateSubject.send()
-
-        print("Engine started successfully")
+        player.play()
     }
 }
