@@ -1,0 +1,19 @@
+name: CI
+
+on:
+  workflow_dispatch:
+  push:
+  pull_request:
+
+jobs:
+  integration-tests:
+    name: Integration Tests
+    runs-on: macOS-11.0
+    steps:
+      - uses: actions/checkout@v2
+      - name: Run integration tests`
+        run: |
+          xcodebuild test \
+          -scheme CIAudioProblemRepro \
+          -destination "platform=iOS Simulator,name=iPhone 12 mini"
+          xcpretty
